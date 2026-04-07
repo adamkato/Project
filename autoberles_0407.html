@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Autókereskedés</title>
+    <link rel="stylesheet" href="autoberles_0407.css">
+    <script src="autoberles_0407.js"></script>
+
+</head>
+<body>
+<header>
+    <h1>AutoLux</h1>
+    <nav>
+        <a href="#">Főoldal</a>
+        <a href="#cars">Autók</a>
+        <a href="#rolunk">Rólunk</a>
+        <a href="#">Kapcsolat</a>
+
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Találd meg álmaid autóját</h2>
+    <button>Kínálat megtekintése</button>
+</section>
+
+<section id="cars" class="cars">
+    <h2>Kiemelt autók</h2>
+
+    <!-- KERESŐ + SZŰRŐ -->
+    <div style="text-align:center; margin-bottom:30px;">
+        <input type="text" id="search" placeholder="Autó keresése...">
+        
+        <select id="filter">
+            <option value="all">Összes</option>
+            <option value="low">Olcsó (0-10 000 Ft/nap)</option>
+            <option value="high">Drága (10 000+ Ft/nap)</option>
+        </select>
+    </div>
+
+    <div class="car-grid" id="cars-list">
+
+        <div class="car-card" data-name="bmw" data-price="12000">
+            <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e">
+            <h3>BMW 320d</h3>
+            <p class="price">12 000 Ft / nap</p>
+            <p>Dízel • Automata</p>
+            <button>Bérlés</button>
+        </div>
+
+        <div class="car-card" data-name="audi" data-price="9000">
+            <img src="https://images.unsplash.com/photo-1549924231-f129b911e442">
+            <h3>Audi A4</h3>
+            <p class="price">9 000 Ft / nap</p>
+            <p>Benzin • Manuális</p>
+            <button>Bérlés</button>
+        </div>
+
+        <div class="car-card" data-name="mercedes" data-price="15000">
+            <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a">
+            <h3>Mercedes C200</h3>
+            <p class="price">15 000 Ft / nap</p>
+            <p>Benzin • Automata</p>
+            <button>Bérlés</button>
+        </div>
+
+    </div>
+</section>
+
+<section id="rolunk" style="padding: 50px; background-color: #1a1a1a; text-align: center;">
+    <h2>Rólunk</h2>
+    <p>Az AutoLux célja, hogy ügyfeleink számára a legjobb autókat biztosítsuk megbízható forrásból.</p>
+
+    <h3>Alapítóink</h3>
+    <div style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
+        
+        <div>
+            <h4>Beszédes Richárd</h4>
+            <p>Sales Manager</p>
+            <p>📧 beszedes.2023b@puskas.hu</p>
+        </div>
+
+        <div>
+            <h4>Kató Ádám</h4>
+            <p>Tulajdonos</p>
+            <p>📧 kato.2023b@puskas.hu</p>
+        </div>
+
+        <div>
+            <h4>Nemes Dominik</h4>
+            <p>Projektvezető</p>
+            <p>📧 nemes.2023b@puskas.hu</p>
+        </div>
+
+    </div>
+</section>
+
+<section style="padding:50px; background:#1a1a1a; text-align:center;">
+    <h2>Autókereskedésünk helye</h2>
+    <p>Látogass el hozzánk személyesen!</p>
+
+    <iframe 
+        src="https://www.google.com/maps?q=Puskás+Tivadar+Technikum+Budapest&output=embed"
+        width="100%" 
+        height="400" 
+        style="border:0; border-radius:15px;">
+    </iframe>
+
+    <div style="margin-top:20px;">
+        <p><strong>📍 Cím:</strong> Budapest, Gyáli út 22</p>
+        <p><strong>🕒 Nyitvatartás:</strong> H-P 7:00–18:00</p>
+    </div>
+</section>
+
+
+
+<section class="contact">
+    <h2>Kapcsolat</h2>
+    <p>📞 +36 30 123 4567</p>
+    <p>📧 info@autolux.hu</p>
+
+</section>
+
+<footer>
+    <p>© 2026 AutoLux</p>
+</footer>
+
+</body>
+</html>
